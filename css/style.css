@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: #F0F2F5;
+    position: relative;
+}
+
+header .main {
+    position: absolute;
+    top: 25%;
+    width: 70%;
+    display: flex;
+    gap: 60px;
+    /* display: none; */
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+header .main .left {
+    flex: 1;
+    justify-content: left;
+}
+
+header .main .right {
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+header .main .left p {
+    font-size: 28px;
+    letter-spacing: 0.2px;
+    margin-left: 28px;
+    margin-top: -14px;
+    font-weight: 400;
+}
+
+header .main .left img {
+    height: 106px;
+    width: 301px;
+}
+
+header .main .right form {
+    background: #fff;
+    width: 396px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 20px 0 28px;
+    border-radius: 8px;
+    margin-top: -50px;
+}
+
+.form_body {
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+form input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    font-size: 17px;
+    border-radius: 5px;
+    outline-color: #8AB7EF;
+}
+
+.login {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 100%;
+    padding: 0 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.forget {
+    text-align: center;
+    color: #1877f2;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.forget:hover {
+    text-decoration: underline;
+}
+
+hr {
+    background-color: rgba(128, 128, 128, 0.349);
+    height: 0.2px;
+
+}
+
+.create {
+    background-color: #42b72a;
+    ;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 192px;
+    padding: 0 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+}
+
+.foot {
+
+    margin-top: 28px;
+    margin-left: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.foot span {
+    font-weight: bold;
+}
+
+/* //signup design */
+.signup {
+    position: absolute;
+    left: 50%;
+    background: #fff;
+    width: 432px;
+    display: none;
+    top: 50%;
+    z-index: 222;
+    /* padding: 0 15px; */
+    padding-bottom: 18px;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+}
+
+.top>div>h2 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+.top>div>p {
+    color: #606770;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.top img {
+    padding-bottom: 35px;
+    cursor: pointer;
+    width: 25px;
+}
+
+hr {
+    border: 0.1px;
+    background: grey;
+
+}
+
+
+
+.signup_body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.signup_form .same {
+    padding: 10px;
+    outline: none;
+    width: 50%;
+    font-size: 15px;
+
+}
+
+.name {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.bottom input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.birthday {
+    padding: 0 15px;
+
+}
+
+.birthday select {
+    padding: 7px 35px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.458);
+
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.gender {
+    padding: 0 15px;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+
+}
+
+.person>div {
+    border: 1px solid rgba(0, 0, 0, 0.458);
+    padding: 7px;
+    display: flex;
+    font-size: 16px;
+    gap: 15px;
+    border-radius: 3px;
+}
+
+.person label {
+    margin-right: 10px;
+}
+
+.content {
+    padding: 0 15px;
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.text {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.singin {
+    height: 36px;
+    width: 194px;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    margin: auto;
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+    margin-left: 118px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.blue{
+    color: #1877f2;
+}
+
+.show{
+    display: block;
+}
+
+.layer{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 22;
+    opacity: 0.7;
+    display: none;
+}
